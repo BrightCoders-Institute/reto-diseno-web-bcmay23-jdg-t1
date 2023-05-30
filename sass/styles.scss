@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+//Pc max-width 1440px
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Gray-ish-Blue: hsl(208, 11%, 55%);
+    --general-font: 18px;
+    --header-font-family: "Poppins", sans-serif;
+    --main-font-family: "Open Sans", sans-serif;
+  }
+  body {
+    background-image: url("../img/bg-hero-mobile.svg");
+    margin: 0 10px;
+    header {
+      display: flex;
+      justify-content: space-around;
+      margin: 0.5rem 2px;
+
+      img {
+        margin: 1rem 0;
+        width: auto;
+        height: 20px;
+      }
+    }
+    .try-free-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      font-size: 8px;
+      border-radius: 1rem;
+      padding: 0 2rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      span {
+        font-family: var(--header-font-family);
+        font-size: 15px;
+      }
+    }
+    .margin {
+      margin: 0 30px;
+      main {
+        font-family: var(--main-font-family);
+        h1 {
+          color: var(--Very-Dark-Cyan);
+          margin-top: 50px;
+          font-size: 1.5rem;
+          text-align: center;
+          font-weight: bold;
+        }
+        p {
+          line-height: 1.2;
+          text-align: center;
+          color: var(--Very-Dark-Cyan);
+          margin-top: 2rem;
+          font-size: var(--general-font);
+        }
+        .button-container {
+          display: flex;
+          justify-content: center;
+          .get-started-button {
+            padding: 0.8rem 0;
+            margin-top: 2rem;
+            width: 250px;
+            border-radius: 1rem;
+            background-color: var(--Pink);
+            text-align: center;
+            color: var(--Very-Pale-Cyan);
+            border: none;
+          }
+        }
+        .img-container-landingpage {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 2rem;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .card-section {
+          display: grid;
+          grid-template-columns: 1fr;
+          .card {
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 100%;
+              height: auto;
+            }
+            h2 {
+              text-align: center;
+            }
+            p {
+              line-height: 1.2;
+              text-align: center;
+              color: var(--Gray-ish-Blue);
+              margin: 0.5rem 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
